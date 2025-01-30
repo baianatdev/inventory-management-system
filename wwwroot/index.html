@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventory Management System</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <h1>Inventory Management System</h1>
+    <form id="itemForm">
+        <input type="text" id="name" placeholder="Name" required>
+        <input type="text" id="description" placeholder="Description">
+        <input type="number" id="quantity" placeholder="Quantity" required>
+        <input type="number" id="price" placeholder="Price" step="0.01" required>
+        <input type="file" id="image" accept="image/*">
+        <button type="submit">Add Item</button>
+    </form>
+    <input type="text" id="search" placeholder="Search by name">
+    <table id="inventoryTable">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Description</th>
+                <th>Quantity</th>
+                <th>Price</th>
+                <th>Image</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- JS in another file -->
+        </tbody>
+    </table>
+    <script src="/js/script.js"></script>
+</body>
+</html>
